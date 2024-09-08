@@ -1,0 +1,126 @@
+/* General body styles to center the content */
+body {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%);
+}
+
+/* Container for all the content */
+.container {
+    width: 80%;
+    min-width: 360px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b{
+    color: #35118f;
+}
+.a{
+    color: rgb(194, 37, 94);
+}
+/* Styles for the array input */
+.array-input-label {
+    display: block;
+    margin-bottom: 10px;
+}
+.array-input {
+    display: block;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    max-width: 600px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font: inherit;
+    margin-bottom: 10px;
+    text-align: center; /* Center text inside the input */
+}
+.array-input:focus {
+    border: 1px solid #09a0aa;
+    box-shadow: 0 0 5px #09a0aa;
+}
+
+/* Submit button for sorting */
+.submit-array {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #09aa0c;
+    font: inherit;
+    width: 100%;
+    max-width: 600px;
+    cursor: pointer;
+}
+.submit-array:hover {
+    background-color: #06585e;
+    transform: scale(1.02);
+}
+
+/* Input error message */
+.input-error {
+    color: red;
+}
+
+/* Array output container */
+.array {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* Array element styling */
+.array-element {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Highlighted elements during sorting */
+.array-element.swapped {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+.array-element.compared {
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+/* Status messages */
+.comparing {
+    color: blue;
+}
+.swapping {
+    color: red;
+}
+
+/* Bubble animation */
+.canvas {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bubble {
+    display: block;
+    border-radius: 100%;
+    opacity: 0.8;
+    position: absolute;
+    background: radial-gradient(ellipse at center, #b8c6c6 0%, #30b3d3 46%, #20628c 100%);
+}
